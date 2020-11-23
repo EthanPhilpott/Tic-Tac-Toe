@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='author' content='Ethan Philpott'>
+        <meta name='description' content='[A short description]'>
+        <meta property='og:image' content='[Hover over Image]'>
+        <meta property='og:title' content='[Hover over title]'>
+        <meta property='og:description' content='[Hover over description]'>
+        <title>Tic-Tac-Toe</title>
+        <link rel='stylesheet' href='style.css'>
+        <link rel='shortcut icon' href='' type='image/x-icon'>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>  
+
+    <body>
+        <div class="cursor" id="cursor"></div>
+
+        <div class="opening">
+            <div class="title">
+                <h1>Tic</h1>
+                <img src="images/x.png" alt="x">
+            </div>
+            <h1>-</h1>
+            <div class="title">
+                <h1>Tac</h1>
+                <img src="images/o.png" alt="o">
+            </div>
+            <h1>-</h1>
+            <div class="title">
+                <h1>Toe</h1>
+                <img src="images/x.png" alt="x">
+            </div>
+        </div>
+        
+        <div class="non-opening">
+            <header>
+                <a href="index.html" class="header-link hover">
+                    <img src="images/x.png" alt="x">
+                    <h1>-</h1>
+                    <img src="images/o.png" alt="o">
+                    <h1>-</h1>
+                    <img src="images/x.png" alt="x">
+                </a>
+                <div class="themes">
+                    <button class="theme theme-light hover"></button>
+                    <button class="theme theme-red hover"></button>
+                    <button class="theme theme-green hover"></button>
+                    <button class="theme theme-blue hover"></button>
+                    <button class="theme theme-dark hover"></button>
+                </div>
+            </header>
+    
+            <main>
+                <section class="p p1">
+                    <h2>Player 1</h2>
+                    <div class="empty"></div>
+                    <div class="wins">
+                        <p>0</p>
+                        <p>Wins</p>
+                    </div>
+                </section>
+                <section class="board" id="board">
+                    <div class="l line-1"></div>
+                    <div class="l line-2"></div>
+                    <div class="l line-3"></div>
+                    <div class="l line-4"></div>
+                    
+                    <button class="b b1" value="0">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b2" value="1">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b3" value="2">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b4" value="3">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b5" value="4">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b6" value="5">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b7" value="6">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b8" value="7">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                    <button class="b b9" value="8">
+                        <img src="images/x.png" alt="x">
+                        <img src="images/o.png" alt="o">
+                    </button>
+                </section>
+                <section class="p p2">
+                    <h2>Player 2</h2>
+                    <div class="selction-slide">
+                        <button class="slide-value hover">Player</button>
+                        <button class="slide-value hover">Easy</button>
+                        <button class="slide-value hover">Hard</button>
+                        <button class="slide-value hover">Impossible</button>
+                    </div>
+                    <div class="wins">
+                        <p>0</p>
+                        <p>Wins</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+
+</html>

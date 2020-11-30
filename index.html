@@ -3,13 +3,13 @@
     <head>
         <meta charset='UTF-8'>
         <meta name='author' content='Ethan Philpott'>
-        <meta name='description' content='[A short description]'>
+        <meta name='description' content='A modernized version of Tic-Tac-Toe'>
         <meta property='og:image' content='[Hover over Image]'>
         <meta property='og:title' content='[Hover over title]'>
         <meta property='og:description' content='[Hover over description]'>
         <title>Tic-Tac-Toe</title>
         <link rel='stylesheet' href='style.css'>
-        <link rel='shortcut icon' href='' type='image/x-icon'>
+        <link rel='shortcut icon' href='images/x.png' type='image/x-icon'>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,19 +20,24 @@
         <div class="cursor" id="cursor"></div>
 
         <div class="opening">
-            <div class="title">
-                <h1>Tic</h1>
-                <img src="images/x.png" alt="x">
+            <div class="opening-title">
+                <div class="title">
+                    <h1>Tic</h1>
+                    <img src="images/x.png" alt="x">
+                </div>
+                <h1 class="dash">-</h1>
+                <div class="title">
+                    <h1>Tac</h1>
+                    <img src="images/o.png" alt="o">
+                </div>
+                <h1 class="dash">-</h1>
+                <div class="title">
+                    <h1>Toe</h1>
+                    <img src="images/x.png" alt="x">
+                </div>
             </div>
-            <h1>-</h1>
-            <div class="title">
-                <h1>Tac</h1>
-                <img src="images/o.png" alt="o">
-            </div>
-            <h1>-</h1>
-            <div class="title">
-                <h1>Toe</h1>
-                <img src="images/x.png" alt="x">
+            <div class="use-sound">
+                <p>Turn on Sound for the Best Experince (Thanks Tim)</p>
             </div>
         </div>
         
@@ -56,10 +61,10 @@
     
             <main>
                 <section class="p p1">
-                    <h2>Player 1</h2>
+                    <h2>X</h2>
                     <div class="empty"></div>
                     <div class="wins">
-                        <p>0</p>
+                        <p id="p1-score">0</p>
                         <p>Wins</p>
                     </div>
                 </section>
@@ -69,45 +74,45 @@
                     <div class="l line-3"></div>
                     <div class="l line-4"></div>
                     
-                    <button class="b b1" value="0">
+                    <button class="b b1 hover" value="0">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b2" value="1">
+                    <button class="b b2 hover" value="1">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b3" value="2">
+                    <button class="b b3 hover" value="2">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b4" value="3">
+                    <button class="b b4 hover" value="3">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b5" value="4">
+                    <button class="b b5 hover" id="middle" value="4">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b6" value="5">
+                    <button class="b b6 hover" value="5">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b7" value="6">
+                    <button class="b b7 hover" value="6">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b8" value="7">
+                    <button class="b b8 hover" value="7">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
-                    <button class="b b9" value="8">
+                    <button class="b b9 hover" value="8">
                         <img src="images/x.png" alt="x">
                         <img src="images/o.png" alt="o">
                     </button>
                 </section>
                 <section class="p p2">
-                    <h2>Player 2</h2>
+                    <h2>O</h2>
                     <div class="selction-slide">
                         <button class="slide-value hover">Player</button>
                         <button class="slide-value hover">Easy</button>
@@ -115,11 +120,17 @@
                         <button class="slide-value hover">Impossible</button>
                     </div>
                     <div class="wins">
-                        <p>0</p>
+                        <p id="p2-score">0</p>
                         <p>Wins</p>
                     </div>
                 </section>
             </main>
+
+            <footer>
+                <p>
+                    All sound effects by <a href="https://www.zapsplat.com/" target="_blank">ZapSplat</a>
+                </p>
+            </footer>
         </div>
         
         <script src="script.js"></script>

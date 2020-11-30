@@ -410,6 +410,3 @@ function Reset () {
         }
     }, 5) 
 }
-
-
-
